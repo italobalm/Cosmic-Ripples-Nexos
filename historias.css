@@ -1,0 +1,83 @@
+body {
+    font-family: 'Arial', sans-serif;
+    color: white;
+    display: flex;
+    flex-direction: column; /* Alinha o conteúdo em coluna */
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+    margin: 0; /* Remove margens padrão */
+    background-image: url('./img/fundo espaço.png');
+    background-size: cover; /* Ajusta a imagem para cobrir todo o fundo */
+    background-position: center; /* Centraliza a imagem */
+    background-repeat: no-repeat; /* Evita repetir a imagem */
+    position: relative; /* Para o posicionamento do vídeo */
+}
+
+#bg-video {
+    position: absolute; /* Coloca o vídeo atrás do conteúdo */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Faz com que o vídeo cubra toda a área */
+    z-index: -1; /* Coloca o vídeo atrás do conteúdo */
+}
+
+.container {
+    text-align: center;
+    z-index: 1; /* Garante que o texto fique acima do vídeo */
+}
+
+h2 {
+    margin: 40px 0; /* Margem aumentada para afastar do topo e das bordas */
+    color: rgb(228, 204, 44); /* Cor do texto */
+    -webkit-text-stroke: 1px black; /* Contorno preto */
+
+}
+
+h3 {
+    margin: 40px 0; /* Margem aumentada para afastar do topo e das bordas */
+    color:white; /* Cor do texto */
+    -webkit-text-stroke: 0.5px black; /* Contorno preto */
+}
+
+.media {
+    margin: 20px 0;
+}
+
+.media-content {
+    width: 80%; /* Ajuste conforme necessário */
+    max-width: 800px; /* Ajuste conforme necessário */
+    height: auto; /* Para manter a proporção */
+}
+
+.buttons {
+    display: flex;
+    justify-content: space-between; /* Mantém os botões afastados */
+    padding: 20px; /* Espaçamento interno */
+    opacity: 0.5; /* Define a opacidade em 50% */
+    position: fixed; /* Fixa os botões na parte inferior */
+    left: 50%; /* Centraliza horizontalmente */
+    transform: translateX(-50%); /* Ajusta a posição para centralizar */
+    bottom: 20px; /* Distância do fundo da página */
+    width: 100%; /* Para que os botões ocupem a largura total */
+}
+
+.button {
+    text-decoration: none;
+    padding: 10px 20px;
+    border: 2px solid #007BFF;
+    border-radius: 5px;
+    background-color: #007BFF;
+    color: white;
+    font-weight: bold;
+    transition: background-color 0.3s, transform 0.3s;
+    margin: 0 80px; /* Ajusta o espaço entre os botões */
+}
+
+.button:hover {
+    background-color: rgba(255, 255, 255, 0.5); /* Efeito ao passar o mouse */
+    color: black;
+}
